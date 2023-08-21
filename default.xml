@@ -19,6 +19,7 @@
 
   <!-- KernelSU -->
   <project path="kernel/msm-5.4/KernelSU" name="tiann/KernelSU" remote="github" revision="d394fd2e014056f2b8bf8b9ec0fe64c045d5340b" />
+  <linkfile src="kernel/msm-5.4/KernelSU/kernel" dest="kernel/msm-5.4/drivers/kernelsu" />
   
   <!-- AnyKernel3 -->
   <project path="ak3" name="mvaisakh/AnyKernel3" remote="github" revision="op9p" clone-depth="1" />
