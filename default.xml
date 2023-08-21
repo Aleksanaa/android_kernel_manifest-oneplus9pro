@@ -15,11 +15,12 @@
   <project path="tools/libufdt" name="platform/system/libufdt" revision="master" remote="aosp" />
 
   <!-- OnePlus 9 Series Kernel -->
-  <project path="kernel/msm-5.4" name="aleksanaa/kernel-oneplus9pro" remote="github" revision="main" />
+  <project path="kernel/msm-5.4" name="aleksanaa/kernel-oneplus9pro" remote="github" revision="main">
+    <linkfile src="KernelSU/kernel" dest="kernel/msm-5.4/drivers/kernelsu" /> 
+  </project>
 
   <!-- KernelSU -->
   <project path="kernel/msm-5.4/KernelSU" name="tiann/KernelSU" remote="github" revision="d394fd2e014056f2b8bf8b9ec0fe64c045d5340b" />
-  <linkfile src="kernel/msm-5.4/KernelSU/kernel" dest="kernel/msm-5.4/drivers/kernelsu" />
   
   <!-- AnyKernel3 -->
   <project path="ak3" name="mvaisakh/AnyKernel3" remote="github" revision="op9p" clone-depth="1" />
